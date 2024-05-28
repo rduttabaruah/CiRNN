@@ -1,0 +1,1 @@
+The appliance energy prediction (AEP) task aims to forecast the total electricity usage of household appliances by analyzing past consumption data, temperature and humidity readings from different rooms, and local weather conditions. Additionally, the day of the week is added as contextual information.
