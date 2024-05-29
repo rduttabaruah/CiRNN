@@ -1,6 +1,7 @@
 The task is short-term traffic speed prediction where weather data is used as contextual information for learning CiRNN.The data is available in three different folders: part1, part2, and part3. During model training the data from these folders are required to be combined. We utilized the publicly available Metr-LA real traffic dataset, which aggregates recorded traffic speeds into five-minute intervals. This dataset comprises information from 207 sensors placed throughout Los Angeles County’s highway from March 1 to June 30, 2012, and includes various details such as timestamp, travel direction, district name, lane type, segment length covered by each sensor (station), total flow, average occupancy, and average speed. For our model, we focused solely on average speed. Hourly weather data, including temperature, precipitation, and wind speed, was obtained from the NASA Prediction Of Worldwide Energy Resources (POWER) database. The following are the data sources:
 
 Li, Y., Yu, R., Shahabi, C., and Liu, Y. (2018b). Diffusion convolutional recurrent neural network: Data-driven traffic forecasting. https://doi.org/10.48550/arXiv.1707.01926.
+
 https://power.larc.nasa.gov/
 
 The three folders part1, part2, and part3 consist of processed data where sensor and weather data are merged. The processed data consists of the following features : 'Year', 'Month', 'Day', 'Hour', 'Weekday', 'StationId', 'AvgSpeed', 'AvgSpeed1', 'AvgSpeed2', 'AvgSpeed3', 'AvgSpeed4', 'AvgSpeed5', 'AvgSpeed6', 'AvgSpeed7', 'Precipitation', 'Temp', 'WindSpeed'
