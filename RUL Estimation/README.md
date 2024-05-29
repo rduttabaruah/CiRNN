@@ -6,7 +6,7 @@ FD001 has 1 failure mode and 6 operational states, FD002 has 1 failure mode and 
 Seprate scripts are created for four datasets, which are CiRNN_FD001.ipynb, CiRNN_FD002.ipynb, CiRNN_FD003.ipynb, CiRNN_FD004.ipynb, respectively. To run the scripts, apart from standard libraries, installation of optuna framework for hyperparameter framework will be required. The following steps can be followed for each of the scripts:
 1. Data loading - download the provided data and define the path for the data to load it.
 2. Data Preprocessing - For FD001 and FD003 where there is only one operational condition, contextual normalisation using clustering is not required. They require ony min-max normalization. On the other hand, for FD002 and FD003, two preprocessing methods are used, contextual normalisation using clustering and min-max normalisation. So, two different models will be developed depending on the preprocessed data. More details are available in the above mentioned reference. After normalisation, data smoothing is performed. 
-3. Data preparation: This step will prepare the data so that it can be given as input to the CiRNN. it requires specifying a sequence length.
+3. Data preparation: This step will prepare the data so that it can be given as input to the CiRNN. It requires specifying a sequence length.
 4. Loading data into Pytorch data loaders - This step requires defining the batch size.
 5. Hyperparameter tuning using Optuna - The batch size should be consistent with the above step.
 6. Training - In step 5, the best hyperparameters are returned. Using these hyperparametres training can be performed.
